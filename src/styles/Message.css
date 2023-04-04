@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@keyframes avatar {
+    0% {transform: rotateZ(0.05turn);}
+    25%{transform: rotateZ(-0.05turn);}
+    50%{transform: rotateZ(0.05turn);}
+    75%{transform: rotateZ(-0.05turn);}
+    100%{transform: rotateZ(0.00turn);}
+}
+
+.avatar {
+    top: 2px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 2px rgb(255, 0, 0) solid;
+    box-shadow: 1px 1px 5px rgb(41, 40, 40), 2px 2px 5px rgb(71, 71, 71);
+    max-width: 100%;
+    animation-name: avatar;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.message {
+    position: relative;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.message-text {
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #2bff00;
+    text-shadow: 0px 0px 3px black;
+}
+
+.message-author {
+    font-family: Righteous, sans-serif;
+    font-size: 25px;
+    color: rgb(39, 227, 58);
+    text-shadow: 1px 1px 2px red;
+}
+
+.date {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: rgb(0, 255, 225);
+}
