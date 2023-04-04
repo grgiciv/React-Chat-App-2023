@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { getRandomColor } from "../library/random";
 
 export const AppContext = React.createContext("test");
 

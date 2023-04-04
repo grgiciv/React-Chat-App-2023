@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export function MessageForm(props) {
     const [ formState, setFormState ] = useState('');
-    const [bgcolor, setBgcolor] = useState(getRandomColor());
+    const [bgcolor] = useState(getRandomColor());
     
     function handleChange(message){
         setFormState(message);
