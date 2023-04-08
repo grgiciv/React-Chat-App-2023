@@ -27,12 +27,7 @@ export function ChatPage() {
             avatarIndex={message.author.avatarIndex}
             author={message.author.username} 
             text={message.text}
-            hours={message.date.hours}
-            minutes={message.date.minutes}
-            seconds={message.date.seconds}
-            day={message.date.day}
-            month={message.date.month}
-            year={message.date.year}
+            date={message.date}
             background={message.background}
             id={message.id}/>
         

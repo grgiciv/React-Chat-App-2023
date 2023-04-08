@@ -24,14 +24,7 @@ export function MessageForm(props) {
                     avatarIndex: props.avatarIndex,
                 },
                 text: formState,
-                date: {
-                    hours: time.getHours(),
-                    minutes: time.getMinutes(),
-                    seconds: time.getSeconds(),
-                    day: time.getDate(),
-                    month: time.getMonth() + 1,
-                    year: time.getFullYear(),
-                },
+                date: new Date(time).toUTCString(),
                 background: bgcolor,
         });
     }
